@@ -1,97 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alumni+Sans+Inline+One:ital@1&family=Baloo+Bhaijaan+2&family=Fredoka+One&family=Girassol&family=IBM+Plex+Mono:wght@100&family=Monoton&family=Pacifico&family=Rubik+Glitch&family=Sacramento&family=Special+Elite&family=Ubuntu:wght@300&display=swap');
-body{
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alumni+Sans+Inline+One:ital@1&family=Baloo+Bhaijaan+2&family=Fredoka+One&family=Girassol&family=IBM+Plex+Mono:wght@100&family=Monoton&family=Pacifico&family=Rock+Salt&family=Rubik+Glitch&family=Sacramento&family=Shadows+Into+Light&family=Special+Elite&family=Ubuntu:wght@300&display=swap');
+body {
+    background-color:rgb(29, 23, 23);
 }
-#navbar ul {
-    background-color: #b7b7b7;
-    width: 100%;
-    height: 30px;
-    border-radius: 10px;
+
+:root {
+    --animate-duration: 800ms;
 }
-ul::before{
+.animate__animated.animate__backInLeft {
+    --animate-duration: 5.5s;
+}
+
+.animate__animated.animate__fadeInBottomRight {
+    --animate-duration: 10.5s;
+}
+
+.animate__animated.animate__zoomInDown {
+    --animate-duration: 6s;
+}
+
+.animate__animated.animate__backInUp {
+    --animate-duration: 5s;
+}
+
+.animate__animated.animate__fadeInTopLeft {
+    --animate-duration: 4s;
+}
+
+ul::before {
     content: "";
     position: absolute;
     height: 90%;
-    background: url('concert bg.jpg') no-repeat center center/cover;
-    top:0px;
-    width:124vw;
+    background: url('concert4.jpg') no-repeat center center/cover;
+    top: 0px;
+    width: 124vw;
     z-index: -1;
-    opacity: 12.5;  
+    opacity: 0.27;
 }
-ul{
-    display:flex;
+
+#img {
+    display: flex;
+    height: 40px;
+    width: 35%;
+}
+#logoname{
+    color:white;
+    font-size:10px;
+    font-family: 'Rock Salt', cursive;
+}
+ul {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-li{
+
+li {
     list-style: none;
-    margin-left: 50px;
+    margin-left: 40px;
     padding-left: 12px;
-    font-size: 20px;
+    font-size: 12px;
 }
+
 li a {
-    color: #4e0000;
+    color: #ffffff;
     text-decoration: none;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
     font-weight: bolder;
 }
-li a:hover{
+
+li a:hover {
     font-size: 20px;
-    border:7px solid black;
+    border: 7px solid black;
     border-radius: 20px;
     background-color: white;
     color: rgb(74, 117, 78);
 }
-#info{
+
+#info {
     text-align: center;
     align-items: center;
     margin: 12px;
-    padding:10px;
+    padding: 10px;
 }
-#dt{
-    margin-bottom: 5px;
-    font-size: 20px;
-    font-family: 'Fredoka One', cursive;
-    
-    color:brown;
+
+#dt {
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-family: 'Sacramento', cursive;
+    color: rgb(197, 221, 241);
 }
-#title{
+
+#title {
     font-size: 40px;
     font-family: 'Monoton', cursive;
-    color: black;
-    padding-bottom: 30px;
+    color: rgb(248, 220, 143);
+    padding-bottom: 5px;
 }
-#venue{
+
+#venue {
     padding-top: 30px;
-    font-weight: bold;
-    color: rgb(199 255 133);
-    font-family: 'baloo Bhaijaan';
-    font-size: 15px;
+    color: rgb(197, 221, 241);
+    font-family: 'Sacramento', cursive;
+    font-size: 29px;
 }
-.performer{
-    color:white;
-    text-align: center;
-    align-items: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.arijit{
-    border:4px solid grey;
-    display:flex;
-    flex-direction: row;
-    margin: 10px;
-    padding:12px;
-    height:100%;
-    width:20%;
-}
-.song{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 250px;
-    margin-top: -300px;
-    align-items: center;
-}
-.arijitcontent{
+
+.performer {
     color: white;
     text-align: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#Ap{
+    display:flex;
+    height:300px;
+    margin: 30px;
+    padding:20px;
+}
+#Ap{
+    animation-name: Apdhillon;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+    animation-iteration-count: 1;
+}
+@keyframes Apdhillon {
+    from {
+        height: 300px;
+    }
+    to {
+        height: 1000px;
+    }
+}
+#Ap::before{
+    content:"Hover on pic guys your fav lyrics is here ";
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:35px;
+    font-family: 'Shadows Into Light', cursive;
+    color:rgb(231, 210, 169);
+}
+#Ap:hover::before{
+    content:"AP dhillon";
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:35px;
+    font-family: 'Shadows Into Light', cursive;
+    color:rgb(231, 210, 169);
+}
+#Ap:hover::after{
+    content:"Oh Desi jehe geet aa trap jehi beat aa, Sirr kadd gajjde speakeran ch vajjde Brown munde.";
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:30px;
+    padding:30px;
+    font-size:35px;
+    font-family: 'Shadows Into Light', cursive;
+    color:rgb(231, 210, 169);
 }

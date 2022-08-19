@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .div1{
+            width:350px;
+            margin:auto;
+            margin:10 0 0 450px;
+            overflow: hidden;
+            padding: 75px;
+            background-color:grey;
+        }
+        h2{
+            text-align: center;
+            padding:10px;
+            color:white;
+        }
+        label{
+            color:black;
+            margin:20px;
+            padding-left:10px;
+        }
+        .inputText{
+            width: 200px;
+            height: 10px;
+            border:none;
+            border-radius:5px;
+            padding-left:8px;
+        }
+        #logButton{
+            width:100px;
+            height:20px;
+            border:none;
+            border-radius: 10px;
+            margin: 20px;
+            padding:2px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color:black;
+        }
+        #logButton:hover{
+            cursor: pointer;
+            background-color: black;
+            color:rgb(86, 255, 86);
+        }
+    </style>
+    <script>
+        function myFunction(){
+            var un = document.forms["myform"]["Uname"].value;
+            var pw = document.forms["myform"]["Pass"].value;
+            if(un==harsh){
+              window.location.assign=("index.html");
+            }
+            else{
+                alert("Invalid details");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <div class="div1">
+        <form action="index.html" name="myform">
+            <label >User Name:</label>
+            <input type="text" name="Uname" class="inputText" placeholder="Enter your User Name"><br>
+            <label >Password:</label>
+            <input type="password" name="Pass" class="inputText" placeholder="Enter your Password">
+            <input type="submit" name="log" id="logButton"value="Login" onclick="myFunction()">
+        </form>
+    </div>
+ 
+    </script>
+</body>
+</html>
