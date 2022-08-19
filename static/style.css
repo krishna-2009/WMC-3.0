@@ -24,7 +24,7 @@ body {
 
 .animate__animated.animate__fadeInTopLeft {
     --animate-duration: 4s;
-}
+} 
 
 ul::before {
     content: "";
@@ -118,7 +118,7 @@ li a:hover {
 }
 #Ap{
     animation-name: Apdhillon;
-    animation-duration: 20s;
+    animation-duration: 10s;
     animation-timing-function: ease-in-out;
     animation-direction: reverse;
     animation-iteration-count: 1;
@@ -136,8 +136,8 @@ li a:hover {
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size:35px;
-    font-family: 'Shadows Into Light', cursive;
+    font-size:25px;
+    font-family: sans-serif;
     color:rgb(231, 210, 169);
 }
 #Ap:hover::before{
