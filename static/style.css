@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Alumni+Sans+Inline+One:ital@1&family=Baloo+Bhaijaan+2&family=Fredoka+One&family=Girassol&family=IBM+Plex+Mono:wght@100&family=Monoton&family=Pacifico&family=Rock+Salt&family=Rubik+Glitch&family=Sacramento&family=Shadows+Into+Light&family=Special+Elite&family=Ubuntu:wght@300&display=swap');
+
 body {
-    background-color:rgb(29, 23, 23);
+    background-color: rgb(29, 23, 23);
 }
 
 :root {
     --animate-duration: 800ms;
 }
+
 .animate__animated.animate__backInLeft {
     --animate-duration: 5.5s;
 }
 
 .animate__animated.animate__fadeInBottomRight {
     --animate-duration: 10.5s;
-}
+} 
 
 .animate__animated.animate__zoomInDown {
     --animate-duration: 6s;
@@ -24,15 +26,14 @@ body {
 
 .animate__animated.animate__fadeInTopLeft {
     --animate-duration: 4s;
-} 
-
+}
 ul::before {
     content: "";
     position: absolute;
-    height: 90%;
+    height: 60%;
     background: url('concert4.jpg') no-repeat center center/cover;
     top: 0px;
-    width: 124vw;
+    width: 100vw;
     z-index: -1;
     opacity: 0.27;
 }
@@ -40,30 +41,34 @@ ul::before {
 #img {
     display: flex;
     height: 40px;
-    width: 35%;
 }
 #logoname{
     color:white;
     font-size:10px;
     font-family: 'Rock Salt', cursive;
 }
+#logoname:hover{
+    cursor: pointer;
+    font-size:20px;
+}
 ul {
     display: flex;
     justify-content: center;
+    margin-right:80px;
     align-items: center;
+    height: 0px;
 }
 
 li {
     list-style: none;
-    margin-left: 40px;
-    padding-left: 12px;
+    margin-left: 45px;
+    padding-left: 36px;
     font-size: 12px;
 }
 
 li a {
     color: #ffffff;
     text-decoration: none;
-    font-family: 'Shadows Into Light', cursive;
     font-size: 20px;
     font-weight: bolder;
 }
@@ -79,13 +84,14 @@ li a:hover {
 #info {
     text-align: center;
     align-items: center;
-    margin: 12px;
+    margin-top: 20px;
     padding: 10px;
 }
 
 #dt {
-    margin-bottom: 0px;
-    font-size: 30px;
+    margin-top: 40px;
+    margin-left: -20px;
+    font-size: 35px;
     font-family: 'Sacramento', cursive;
     color: rgb(197, 221, 241);
 }
@@ -93,70 +99,77 @@ li a:hover {
 #title {
     font-size: 40px;
     font-family: 'Monoton', cursive;
+    margin-left: -100px;
     color: rgb(248, 220, 143);
-    padding-bottom: 5px;
 }
 
 #venue {
     padding-top: 30px;
     color: rgb(197, 221, 241);
     font-family: 'Sacramento', cursive;
-    font-size: 29px;
+    font-size: 35px;
 }
 
 .performer {
     color: white;
     text-align: center;
     align-items: center;
+    margin-left: -100px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#Ap{
-    display:flex;
-    height:300px;
+
+#Ap {
+    display: flex;
+    height: 300px;
     margin: 30px;
-    padding:20px;
+    padding: 20px;
 }
-#Ap{
+
+#Ap {
     animation-name: Apdhillon;
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
     animation-direction: reverse;
     animation-iteration-count: 1;
 }
+
 @keyframes Apdhillon {
     from {
         height: 300px;
     }
     to {
-        height: 1000px;
+        height: 500px;
     }
 }
-#Ap::before{
-    content:"Hover on pic guys your fav lyrics is here ";
-    display:flex;
+
+#Ap::before {
+    content: "Hover on pic guys your fav lyrics is here ";
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-size:25px;
+    font-size: 25px;
     font-family: sans-serif;
-    color:rgb(231, 210, 169);
+    color: rgb(231, 210, 169);
 }
-#Ap:hover::before{
-    content:"AP dhillon";
-    display:flex;
+
+#Ap:hover::before {
+    content: "AP dhillon";
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-size:35px;
+    font-size: 35px;
     font-family: 'Shadows Into Light', cursive;
-    color:rgb(231, 210, 169);
+    color: rgb(231, 210, 169);
 }
-#Ap:hover::after{
-    content:"Oh Desi jehe geet aa trap jehi beat aa, Sirr kadd gajjde speakeran ch vajjde Brown munde.";
-    display:flex;
+
+#Ap:hover::after {
+    content: "Oh Desi jehe geet aa trap jehi beat aa, Sirr kadd gajjde speakeran ch vajjde Brown munde.";
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin:30px;
-    padding:30px;
-    font-size:35px;
+    margin: 30px;
+    padding: 30px;
+    font-size: 35px;
     font-family: 'Shadows Into Light', cursive;
-    color:rgb(231, 210, 169);
+    color: rgb(231, 210, 169);
 }
