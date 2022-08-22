@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alumni+Sans+Inline+One:ital@1&family=Baloo+Bhaijaan+2&family=Fredoka+One&family=Girassol&family=IBM+Plex+Mono:wght@100&family=Monoton&family=Pacifico&family=Rock+Salt&family=Rubik+Glitch&family=Sacramento&family=Shadows+Into+Light&family=Special+Elite&family=Ubuntu:wght@300&display=swap');
+
+body {
+    background-color: rgb(29, 23, 23);
+}
+
+:root {
+    --animate-duration: 800ms;
+}
+
+.animate__animated.animate__backInLeft {
+    --animate-duration: 5.5s;
+}
+
+.animate__animated.animate__fadeInBottomRight {
+    --animate-duration: 10.5s;
+}
+
+.animate__animated.animate__zoomInDown {
+    --animate-duration: 6s;
+}
+
+.animate__animated.animate__backInUp {
+    --animate-duration: 5s;
+}
+
+.animate__animated.animate__fadeInTopLeft {
+    --animate-duration: 4s;
+}
+
+#navbar ul::before {
+    content: "";
+    position: absolute;
+    height: 60%;
+    background: url('concert4.jpg') no-repeat center center/cover;
+    top: 0px;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.27;
+}
+
+#img {
+    display: flex;
+    height: 40px;
+}
+
+#img:hover {
+    margin: 10px;
+    height: 60px;
+}
+
+#logoname {
+    color: white;
+    font-size: 10px;
+    font-family: 'Rock Salt', cursive;
+}
+
+#logoname:hover {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    margin-right: 80px;
+    align-items: center;
+    height: 0px;
+}
+
+#navbar ul li {
+    list-style: none;
+    margin-left: 45px;
+    padding-left: 36px;
+    font-size: 12px;
+}
+
+#navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#navbar ul li a:hover {
+    font-size: 20px;
+    border: 7px solid black;
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(74, 117, 78);
+}
+
+#info {
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#dt {
+    margin-top: 40px;
+    margin-left: -20px;
+    font-size: 35px;
+    font-family: 'Sacramento', cursive;
+    color: rgb(197, 221, 241);
+}
+
+#title {
+    font-size: 40px;
+    font-family: 'Monoton', cursive;
+    margin-left: -100px;
+    color: rgb(248, 220, 143);
+}
+
+#venue {
+    padding-top: 30px;
+    color: rgb(197, 221, 241);
+    font-family: 'Sacramento', cursive;
+    font-size: 35px;
+}
+
+.performer {
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin-left: -100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#Ap {
+    display: flex;
+    height: 300px;
+    margin: 30px;
+    padding: 20px;
+}
+
+#Ap {
+    animation-name: Apdhillon;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+    animation-iteration-count: 1;
+}
+
+@keyframes Apdhillon {
+    from {
+        height: 300px;
+    }
+
+    to {
+        height: 500px;
+    }
+}
+
+#Ap::before {
+    content: "Hover on pic guys your fav lyrics is here ";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(231, 210, 169);
+}
+
+#Ap:hover::before {
+    content: "AP dhillon";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(231, 210, 169);
+}
+
+#Ap:hover::after {
+    content: "Oh Desi jehe geet aa trap jehi beat aa, Sirr kadd gajjde speakeran ch vajjde Brown munde.";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+    font-size: 35px;
+    font-family: 'Shadows Into Light', cursive;
+    color: rgb(231, 210, 169);
+}
+
+/* From here edited by Krishna Patel */
+
+#about_program {
+    color: white;
+}
+
+#about_program #about_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about_program #about_top #heading_of_about {
+    text-align: center;
+    margin: 9px 2px;
+    font-size: 35px;
+
+}
+
+#about_program #about_top #content_of_about {
+    margin: 11px 25px;
+    padding: 8px 15px;
+}
+
+
+.footer {
+    color: white;
+
+}
+
+.footer .footer_top .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer_top .container h3 {
+    display: block;
+    font-weight: bold;
+    padding: 2px;
+    margin: 0px;
+    font-size: 34px;
+}
+
+
+.footer .footer_bottom #copyright_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_of_social_media .img_of_social_media {
+    padding: 2px 20px;
+}
+
+.logo_of_social_media {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 2px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #E1306C;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
