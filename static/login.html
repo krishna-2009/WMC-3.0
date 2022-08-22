@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Alumni+Sans+Inline+One:ital@1&family=Baloo+Bhaijaan+2&family=Fredoka+One&family=Girassol&family=IBM+Plex+Mono:wght@100&family=Monoton&family=Pacifico&family=Roboto:wght@300;700&family=Rock+Salt&family=Rubik+Glitch&family=Sacramento&family=Satisfy&family=Shadows+Into+Light&family=Special+Elite&family=Ubuntu:wght@300&display=swap');
+        * {
+            padding: 0px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --animate-duration: 800ms;
+            --animate-delay: 0.9s;
+        }
+
+        .animate__animated.animate__backInRight {
+            --animate-duration: 2.78s;
+        }
+        .animate__animated.animate__bounce {
+            --animate-duration: 4s;
+        }
+        body {
+            background-color: rgb(87 83 83);
+        }
+        h4{
+            margin:14px;
+        }
+        section{
+            margin: 20px;
+        }
+        .row {
+            background: white;
+            border-radius: 30px;
+            box-shadow: 22px 22px 22px black;
+        }
+
+        img {
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+
+        }
+        #msg{
+            margin: 10px;
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Satisfy', cursive;
+            font-weight: bold;
+        }
+        label{
+            font-family: 'Satisfy', cursive;
+            font-size: 30px;
+        }
+        .btn1 {
+            border: none;
+            outline: none;
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .btn1:hover {
+            background: rgb(90, 89, 89);
+            border: 1px solid;
+            color: lightgreen;
+            cursor: pointer;
+        }
+
+        .footer {
+            color: black;
+            margin-top: -5px;
+        }
+
+        .footer .footer_top .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer .footer_top .container h3 {
+            display: block;
+            font-weight: bold;
+            padding: 2px;
+            margin: 0px;
+            font-size: 34px;
+        }
+
+        .footer .footer_bottom #copyright_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-weight: bold;
+            align-items: center;
+        }
+
+        .logo_of_social_media .img_of_social_media {
+            padding: 2px 20px;
+        }
+
+        .logo_of_social_media {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            padding: 2px 2px;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 20px;
+            width: 54px;
+            text-align: center;
+            text-decoration: none;
+            margin: 2px 6px;
+            height: 51px;
+            border-radius: 49%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #f7274a;
+            color: white;
+        }
+
+        .fa-snapchat-ghost {
+            background: #fffc00;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        .fa-pinterest {
+            background: #e9171e;
+            color: white;
+        }
+    </style>
+    <script>
+        function myFunction() {
+            var un = document.myform.Uname.value;
+            var pw = document.myform.Pass.value;
+            if (un.length <= 0) {
+                alert("Name can't be blank");
+                return false;
+            }
+            else if (pw.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+            else {
+                window.location.assign("index.html");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section  class="animate__animated animate__backInRight" class="Form my-4 mx-5" >
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-5">
+                    <img src="login4.jpg" class="img-fluid" alt="">
+                    <div id="msg">
+                        <p >
+                            lets Rock on!!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-7 px-5 pt-5">
+                    <h2 class="animate__animated animate__bounce animate__infinite infinite">Welcome to The Rock Prom</h2>                    <h4>login to your account</h4>
+                    <form action="index.html" name="myform">
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <i class="fa fa-user" aria-hidden="true"></i><label>User Name:</label>
+                                <input type="text" name="Uname" placeholder="Enter Your Username"
+                                    class="form-control my-3 p-4">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <i class="fa fa-lock" aria-hidden="true"></i><label>Password:</label>
+                                <input type="password" name="Pass" placeholder="******" class="form-control my-3 p-4">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <input type="submit" class="btn1 mt-3 mb-5" onclick="return myFunction()">
+                            </div>
+                        </div>
+                    </form>
+                    <h6>Join us on:</h6>
+                    <footer class="footer">
+                        <div class="footer_middle">
+                            <ul class="logo_of_social_media">
+                                <li class="img_of_social_media"><a href="#" class="fa fa-facebook"></a></li>
+                                <li class="img_of_social_media"><a href="#" class="fa fa-twitter"></a></li>
+                                <li class="img_of_social_media"><a href="#" class="fa fa-youtube"></a></li>
+                                <li class="img_of_social_media"><a href="#" class="fa fa-instagram"></a></li>
+                                <li class="img_of_social_media"><a href="#" class="fa fa-snapchat-ghost"></a></li>
+                                <li class="img_of_social_media"><a href="#" class="fa fa-pinterest"></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_bottom">
+                            <p id="copyright_text">
+                                Copyright ©2022 | TheRockProm Inc. |All Rights Reserved by the Company. | Developed by
+                                Krishna Patel
+                                and
+                                Harsh
+                                Pandya.
+                            </p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
