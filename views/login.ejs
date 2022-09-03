@@ -188,7 +188,7 @@
                 return false;
             }
             else {
-                window.location.assign("index.html");
+                window.location.assign("index.ejs");
             }
         }
     </script>
@@ -199,7 +199,7 @@
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-lg-5">
-                    <img src="login4.jpg" class="img-fluid" alt="">
+                    <img src="/static/login4.jpg" class="img-fluid" alt="">
                     <div id="msg">
                         <p>
                             lets Rock on!!
@@ -210,7 +210,7 @@
                     <h2 class="animate__animated animate__bounce animate__infinite infinite">Welcome to The Rock Prom
                     </h2>
                     <h4>login to your account</h4>
-                    <form action="index.html" name="myform">
+                    <form method="get" action="/index">
                         <div class="form-row">
                             <div class="col-lg-7">
                                 <i class="fa fa-user" aria-hidden="true"></i><label>User Name:</label>
