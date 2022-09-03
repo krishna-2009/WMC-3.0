@@ -180,7 +180,7 @@
             var un = document.myform.Uname.value;
             var pw = document.myform.Pass.value;
             if (un.length <= 0) {
-                alert("Name can't be blank");
+                alert("email can't be blank");
                 return false;
             }
             else if (pw.length < 6) {
@@ -213,15 +213,16 @@
                     <form method="get" action="/index">
                         <div class="form-row">
                             <div class="col-lg-7">
-                                <i class="fa fa-user" aria-hidden="true"></i><label>User Name:</label>
-                                <input type="text" name="Uname" placeholder="Enter Your Username"
+                                <i class="fa fa-envelope" aria-hidden="true"></i><label>E-mail:</label>
+                                <input type="email" name="Uname" id="email" placeholder="Enter Your E-mail"
                                     class="form-control my-3 p-4">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-lg-7">
                                 <i class="fa fa-lock" aria-hidden="true"></i><label>Password:</label>
-                                <input type="password" name="Pass" placeholder="******" class="form-control my-3 p-4">
+                                <input type="password" name="Pass" id="pass" placeholder="******"
+                                    class="form-control my-3 p-4">
                             </div>
                         </div>
                         <div class="form-row">
@@ -237,7 +238,8 @@
                                 <li class="img_of_social_media"><a href="#" class="fa fa-facebook"></a></li>
                                 <li class="img_of_social_media"><a href="#" class="fa fa-twitter"></a></li>
                                 <li class="img_of_social_media"><a href="#" class="fa fa-youtube"></a></li>
-                                <li class="img_of_social_media"><a href="#" class="fa fa-instagram"></a></li>
+                                <li class="img_of_social_media"><a href="https://www.instagram.com/therockprom_123/"
+                                        class="fa fa-instagram"></a></li>
                                 <li class="img_of_social_media"><a href="#" class="fa fa-snapchat-ghost"></a></li>
                                 <li class="img_of_social_media"><a href="#" class="fa fa-pinterest"></a></li>
                             </ul>
