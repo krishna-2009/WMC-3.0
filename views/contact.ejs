@@ -29,7 +29,7 @@
 
         .contact::before {
             content: "";
-            background: url(bg_contact.jpg);
+            background: url(/static/bg_contact.jpg);
             opacity: 0.55;
             position: absolute;
             z-index: -1;
@@ -108,7 +108,7 @@
         .contactForm {
             width: 40%;
             padding: 40px;
-            background: rgb(215, 112, 112);
+            background: rgb(136, 134, 134);
             border-radius: 35px;
         }
 
@@ -182,7 +182,7 @@
         iframe {
             width: 60%;
             height: 500px;
-            /* filter: invert(80%); */
+            filter: invert(100%);
         }
 
         #location_google {
@@ -225,27 +225,29 @@
                     <div class="icon"><i class="fa fa-envelope"></i></div>
                     <div class="text">
                         <h3>Email</h3>
-                        <p>therockprom.concert.com</p>
+                        <p>therockprom@gmail.com</p>
                     </div>
                 </div>
             </div>
             <div class="contactForm">
-                <form action="">
+                <form method="post" autocomplete="off" name="google-sheet" action="">
                     <h3 id="heading_contact_box">
                         Send us a message or feedback
                     </h3>
                     <div class="form_elements">
                         <label for="name">Name: </label>
-                        <input type="text" name="name" id="name" placeholder="Enter your full name">
+                        <input type="text" name="name" id="name" placeholder="Enter your full name" value=""
+                            required="" />
                     </div>
                     <div class="form_elements">
                         <label for="phone">Contact Number: </label>
                         <input type="phone" name="phone" id="phone"
-                            placeholder="Enter your contact number or mobile number">
+                            placeholder="Enter your contact number or mobile number" value="" required="" />
                     </div>
                     <div class="form_elements">
                         <label for="message">Message: </label>
-                        <textarea name="message" id="message" cols="30" rows="10">Type your message here</textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" value=""
+                            required="">Type your message here</textarea>
                     </div>
                     <button class="btn form_elements" type="submit">Submit</button>
                 </form>
@@ -255,7 +257,7 @@
 
     <div class="container_of_location">
         <h1>
-            Our location on map
+            Our Concert location on map
         </h1>
     </div>
 
@@ -265,6 +267,19 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzOdU7wIF3OoDSsiXHV0vCo2v8_gL9j8cVHX5cLgeBF4xSzBLtTBIZ1HPNN-Z5qLfqF/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
 </body>
 
 </html>

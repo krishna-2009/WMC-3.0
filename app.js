@@ -25,6 +25,10 @@ app.get('/contact', function (req, res) {
     res.render('contact')
 });
 
+app.get('/eventcalender', function (req, res) {
+    res.render('eventcalender')
+});
+
 app.listen(port, () => {
     console.log(`Listening on port http://localhost:${port}`)
 });
