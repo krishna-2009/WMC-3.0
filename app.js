@@ -29,6 +29,10 @@ app.get('/eventcalender', function (req, res) {
     res.render('eventcalender')
 });
 
+app.get('/buyticket', function (req, res) {
+    res.render('buyticket')
+});
+
 app.listen(port, () => {
     console.log(`Listening on port http://localhost:${port}`)
 });

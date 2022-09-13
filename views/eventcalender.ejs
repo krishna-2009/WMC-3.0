@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calendar</title>
+    <title>Event Calendar</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         iframe {
             filter: invert(90);
@@ -14,9 +19,39 @@
 </head>
 
 <body>
+    <nav id="navbar">
+        <ul>
+            <div id="img">
+                <img src="/static/logo.jpg" alt="">
+                <p class="animate__animated animate__backInLefts" id="logoname">The Rock prom</p>
+            </div>
+            <li><a href="/index"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href="/eventcalender"><i class="fa fa-calendar" aria-hidden="true"></i>Events</a></li>
+            <li><a href="/contact"><i class="fa fa-phone-square" aria-hidden="true"></i>Contact Us</a></li>
+            <li><a href="#"><i class="fa fa-ticket" aria-hidden="true"></i>Buy Tickets</a></li>
+        </ul>
+    </nav>
     <iframe
         src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FKolkata&src=c2RsNTM2OWtuaGlrNGRzNWs0dWcxY2dxcTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D50000"
-        style="border:solid 1px #777" width="1340" height="630" frameborder="0" scrolling="no"></iframe>
+        style="border:solid 1px #777" width="1500" height="680" frameborder="0" scrolling="no"></iframe>
+    <footer class="footer">
+        <div class="footer_middle">
+            <ul class="logo_of_social_media">
+                <li class="img_of_social_media"><a href="https://twitter.com/therockprom" class="fa fa-twitter"></a>
+                </li>
+                <li class="img_of_social_media"><a href="https://www.youtube.com/channel/UC_SLXTU8PvCAR29hTJ8kjyw"
+                        class="fa fa-youtube"></a></li>
+                <li class="img_of_social_media"><a href="https://www.instagram.com/therockprom_123/"
+                        class="fa fa-instagram"></a></li>
+            </ul>
+        </div>
+        <div class="footer_bottom">
+            <p id="copyright_text">
+                Copyright ©2022 | TheRockProm Inc. |All Rights Reserved by the Company. | Developed by Krishna Patel and
+                Harsh Pandya.
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
