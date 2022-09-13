@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .contact {
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-size: cover;
+        }
+
+        .contact::before {
+            content: "";
+            background: url(/static/bg_contact.jpg);
+            opacity: 0.55;
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            background-size: cover;
+        }
+
+        .contact .content {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .contact .content h2 {
+            font-weight: 500px;
+            font-size: 42px;
+            border: 4px solid #1847c7;
+            border-radius: 18px;
+            background: #40d666;
+            color: #3b1717;
+        }
+
+        .contact .content p {
+            color: #000;
+            padding: 8px;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .container .contactInfo {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container .contactInfo .box {
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+
+        .container .contactInfo .box .icon {
+            min-width: 60px;
+            height: 65px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            border-radius: 22px;
+            color: rgb(0, 0, 0);
+        }
+
+        .container .contactInfo .box .text {
+            display: flex;
+            margin-left: 20px;
+            font-size: 22px;
+            width: 70%;
+            color: #210b6c;
+            flex-direction: column;
+            font-weight: 1000;
+        }
+
+        .container .contactInfo .box .text h3 {
+            font-weight: 1000;
+            color: #0f2224;
+        }
+
+        .contactForm {
+            width: 40%;
+            padding: 40px;
+            background: rgb(136, 134, 134);
+            border-radius: 35px;
+        }
+
+        .contactForm #heading_contact_box {
+            font-size: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .contactForm .form_elements {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .contactForm .form_elements input,
+        .contactForm .form_elements textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 9px;
+            resize: none;
+        }
+
+        .btn {
+            width: 100px;
+            background: #00bcd4;
+            color: #fff;
+            border: 2px solid black;
+            cursor: pointer;
+            border-radius: 9px;
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        @media (max-width:991px) {
+            .contact {
+                padding: 50px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .container .contactInfo {
+                margin-bottom: 40px;
+            }
+
+            .container .contactInfo {
+                width: 100%;
+            }
+        }
+
+
+        .container_of_location {
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container_of_location h1 {
+            color: #333;
+            margin: 40px;
+        }
+
+        iframe {
+            width: 60%;
+            height: 500px;
+            filter: invert(100%);
+        }
+
+        #location_google {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>We love questions and feedback and we are always happy to help!</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>B1106 -1107,
+                            Mondeal Square,
+                            SG Highway,
+                            Ahmedabad,
+                            Gujarat 380015,
+                            India.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone-square"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>1234567890</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>therockprom@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form method="post" autocomplete="off" name="google-sheet" action="">
+                    <h3 id="heading_contact_box">
+                        Send us a message or feedback
+                    </h3>
+                    <div class="form_elements">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Enter your full name" value=""
+                            required="" />
+                    </div>
+                    <div class="form_elements">
+                        <label for="phone">Contact Number: </label>
+                        <input type="phone" name="phone" id="phone"
+                            placeholder="Enter your contact number or mobile number" value="" required="" />
+                    </div>
+                    <div class="form_elements">
+                        <label for="message">Message: </label>
+                        <textarea name="message" id="message" cols="30" rows="10" value=""
+                            required="">Type your message here</textarea>
+                    </div>
+                    <button class="btn form_elements" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="container_of_location">
+        <h1>
+            Our Concert location on map
+        </h1>
+    </div>
+
+    <div id="location_google">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9248.202020455643!2d72.597723179815!3d23.09156760312584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c17dc37ee3%3A0xab976f6a3a1f932d!2sNarendra%20Modi%20Stadium!5e0!3m2!1sen!2sin!4v1661113145357!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzOdU7wIF3OoDSsiXHV0vCo2v8_gL9j8cVHX5cLgeBF4xSzBLtTBIZ1HPNN-Z5qLfqF/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>

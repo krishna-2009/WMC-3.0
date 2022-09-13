@@ -14,7 +14,7 @@ body {
 
 .animate__animated.animate__fadeInBottomRight {
     --animate-duration: 10.5s;
-} 
+}
 
 .animate__animated.animate__zoomInDown {
     --animate-duration: 6s;
@@ -27,7 +27,8 @@ body {
 .animate__animated.animate__fadeInTopLeft {
     --animate-duration: 4s;
 }
-ul::before {
+
+#navbar ul::before {
     content: "";
     position: absolute;
     height: 60%;
@@ -42,38 +43,46 @@ ul::before {
     display: flex;
     height: 40px;
 }
-#logoname{
-    color:white;
-    font-size:10px;
+
+#img:hover {
+    margin: 10px;
+    height: 60px;
+}
+
+#logoname {
+    color: white;
+    font-size: 10px;
     font-family: 'Rock Salt', cursive;
 }
-#logoname:hover{
+
+#logoname:hover {
     cursor: pointer;
-    font-size:20px;
+    font-size: 20px;
 }
-ul {
+
+#navbar ul {
     display: flex;
     justify-content: center;
-    margin-right:80px;
+    margin-right: 80px;
     align-items: center;
     height: 0px;
 }
 
-li {
+#navbar ul li {
     list-style: none;
     margin-left: 45px;
     padding-left: 36px;
     font-size: 12px;
 }
 
-li a {
+#navbar ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
     font-weight: bolder;
 }
 
-li a:hover {
+#navbar ul li a:hover {
     font-size: 20px;
     border: 7px solid black;
     border-radius: 20px;
@@ -137,6 +146,7 @@ li a:hover {
     from {
         height: 300px;
     }
+
     to {
         height: 500px;
     }
@@ -172,4 +182,116 @@ li a:hover {
     font-size: 35px;
     font-family: 'Shadows Into Light', cursive;
     color: rgb(231, 210, 169);
+}
+
+/* From here edited by Krishna Patel */
+
+#about_program {
+    color: white;
+}
+
+#about_program #about_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about_program #about_top #heading_of_about {
+    text-align: center;
+    margin: 9px 2px;
+    font-size: 35px;
+
+}
+
+#about_program #about_top #content_of_about {
+    margin: 11px 25px;
+    padding: 8px 15px;
+}
+
+
+.footer {
+    color: white;
+
+}
+
+.footer .footer_top .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer_top .container h3 {
+    display: block;
+    font-weight: bold;
+    padding: 2px;
+    margin: 0px;
+    font-size: 34px;
+}
+
+
+.footer .footer_bottom #copyright_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_of_social_media .img_of_social_media {
+    padding: 2px 20px;
+}
+
+.logo_of_social_media {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 2px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #E1306C;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
 }
