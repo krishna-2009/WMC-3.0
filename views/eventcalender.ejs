@@ -5,16 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>calendar</title>
     <style>
-        iframe{
+        iframe {
             filter: invert(90);
-            
+        }
+
+        #navbar ul {
+            display: flex;
+            justify-content: center;
+            margin-right: 80px;
+            align-items: center;
+            background: black;
+            height: 30px;
+
+        }
+
+        #navbar ul li {
+            list-style: none;
+            margin-left: 45px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding-left: 36px;
+            font-size: 12px;
+        }
+
+        #navbar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        #navbar ul li a:hover {
+            font-size: 20px;
+            border: 7px solid black;
+            border-radius: 20px;
+            background-color: white;
+            color: rgb(74, 117, 78);
         }
     </style>
 </head>
 
 <body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="/index"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href="/eventcalender"><i class="fa fa-calendar" aria-hidden="true"></i>Events</a></li>
+            <li><a href="/contact"><i class="fa fa-phone-square" aria-hidden="true"></i>Contact Us</a></li>
+            <li><a href="/buyticket"><i class="fa fa-ticket" aria-hidden="true"></i>Buy Tickets</a></li>
+        </ul>
+    </nav>
     <iframe
         src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FKolkata&src=c2RsNTM2OWtuaGlrNGRzNWs0dWcxY2dxcTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23D50000"
         style="border:solid 1px #777" width="1340" height="630" frameborder="0" scrolling="no"></iframe>
