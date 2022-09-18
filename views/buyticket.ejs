@@ -11,11 +11,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/static/style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Buy Tickets</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Acme&family=Alumni+Sans+Inline+One:ital@1&family=Baloo+Bhaijaan+2&family=Fredoka+One&family=Girassol&family=IBM+Plex+Mono:wght@100&family=Monoton&family=Pacifico&family=Roboto:wght@300;700&family=Rock+Salt&family=Rubik+Glitch&family=Sacramento&family=Satisfy&family=Shadows+Into+Light&family=Special+Elite&family=Ubuntu:wght@300&display=swap');
@@ -45,6 +40,40 @@
 
         h4 {
             margin: 14px;
+        }
+
+        #navbar ul {
+            display: flex;
+            justify-content: center;
+            margin-right: 80px;
+            align-items: center;
+            background: black;
+            height: 30px;
+
+        }
+
+        #navbar ul li {
+            list-style: none;
+            margin-left: 45px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding-left: 36px;
+            font-size: 12px;
+        }
+
+        #navbar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        #navbar ul li a:hover {
+            font-size: 20px;
+            border: 7px solid black;
+            border-radius: 20px;
+            background-color: white;
+            color: rgb(74, 117, 78);
         }
 
         section {
@@ -175,10 +204,6 @@
 <body>
     <nav id="navbar">
         <ul>
-            <div id="img">
-                <img src="/static/logo.jpg" alt="">
-                <p class="animate__animated animate__backInLefts" id="logoname">The Rock prom</p>
-            </div>
             <li><a href="/index"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
             <li><a href="/eventcalender"><i class="fa fa-calendar" aria-hidden="true"></i>Events</a></li>
             <li><a href="/contact"><i class="fa fa-phone-square" aria-hidden="true"></i>Contact Us</a></li>
